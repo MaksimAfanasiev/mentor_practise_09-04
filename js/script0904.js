@@ -171,14 +171,26 @@
 
 // HW
 
-// 8 REDUCE
-getSums([1, 2, 3, 4, 5])
+// 8  Используя метод REDUCE сделать новый массив таким образом, 
+//чтобы каждый текущий элемент нового массива = сумма текущего элемента старого массива +
+//+ все его предыдущие элементы
 
+// getSums([1, 2, 3, 4, 5]) 
+
+// result
 // [1, 3, 6, 10, 15]
 
+
+
 const getSum = (array) => {
-  
-}
+    return array.reduce((acc, el, idx, arr) => {
+        acc.push(arr.slice(0, idx).reduce((total, num) => total + num, 0) + el);
+        return acc;
+    }, []);
+};
+
+const a = [1,2,3,4,5];
+console.log(getSum(a));
 
 
 
