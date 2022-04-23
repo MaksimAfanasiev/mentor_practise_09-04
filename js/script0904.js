@@ -181,19 +181,18 @@
 // [1, 3, 6, 10, 15]
 
 
+// const getSum = (array) => {
+//     return array.reduce((acc, el, idx, arr) => {
+//         acc.push(arr.slice(0, idx).reduce((total, num) => total + num, 0) + el);
+//         return acc;
+//     }, []);
+// };
 
-const getSum = (array) => {
-    return array.reduce((acc, el, idx, arr) => {
-        acc.push(arr.slice(0, idx).reduce((total, num) => total + num, 0) + el);
-        return acc;
-    }, []);
-};
-
-const a = [1,2,3,4,5];
-console.log(getSum(a));
-
+// const a = [1,2,3,4,5];
+// console.log(getSum(a));
 
 
+// 23.04.22
 
 
 
